@@ -58,24 +58,12 @@ public class Receta {
 	        return  total;
 	}
 	
-	public void agregar(Ingrediente ing, int cant) {
+	public void agregar(Ingrediente ing) {
 		  if (!ing.getNombre().isEmpty()) {
-			  
-			/*  for(Ingrediente e : items) {
-				  
-			  }*/
-			/*  if(ing!=)
-	            items.add(ing);*/
+			  if(ing!=null) {
+		            items.add(ing);
+			  }
 		  }
 	}
-	
-	  public void agregarCerveza(Cerveza cerveza){
-	        if (!cerveza.getNombre().isEmpty())
-	        {
-	            if (!existeCervezaByNombre(cerveza.getNombre()))
-	                getCervezas().add(cerveza);
-	        }
-	    }
 
-	
 }

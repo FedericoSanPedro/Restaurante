@@ -14,17 +14,17 @@ public class Main {
 		Receta rec2 = new Receta(202,"Super Hamburguesa con queso");
 		Receta rec3 = new Receta(203,"Hamburguesa con lechuga y tomate");
 		
-		rec1.agregar(ing1,1);
-		rec1.agregar(ing3,3);
-		rec1.agregar(ing5,2);
+		rec1.agregar(ing1);
+		rec1.agregar(ing3);
+		rec1.agregar(ing5);
 		
-		rec2.agregar(ing1,1);
-		rec2.agregar(ing2,1);
-		rec2.agregar(ing3,6);
+		rec2.agregar(ing1);
+		rec2.agregar(ing2);
+		rec2.agregar(ing3);
 		
-		rec3.agregar(ing1,1);
-		rec3.agregar(ing4,3);
-		rec3.agregar(ing5,3);
+		rec3.agregar(ing1);
+		rec3.agregar(ing4);
+		rec3.agregar(ing5);
 		
 		
 		Categoria cat1 = new Categoria("Oh no","Seguro que el cliente le agarra un infarto");

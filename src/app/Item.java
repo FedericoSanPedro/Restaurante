@@ -14,7 +14,6 @@ public class Item {
 		return "Item: La cantidad es de " + cantidad + ", el ingrediente es " + ingrediente;
 	}
 
-
 	public int getCantidad() {
 		return cantidad;
 	}
@@ -22,10 +21,7 @@ public class Item {
 	public void indicarCantidad(int cant) {
 		this.cantidad= cant>0 ? cant : 0;
 	}
-	/*public void setCantidad(int cantidad) {
-		this.cantidad = cantidad;
-	}
-*/
+	
 	public Ingrediente getIngrediente() {
 		return ingrediente;
 	}

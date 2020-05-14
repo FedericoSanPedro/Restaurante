@@ -16,7 +16,7 @@ public class Ingrediente {
 	@Override
 	public String toString() {
 		return "Ingrediente: El codigo es " + codigo + ", Nombre:" + nombre + ", especificamente" + descripcion
-				+ ", y su valor por unidad es " + precioUnitario;
+				+ ", y su valor por unidad es $" + precioUnitario + ".";
 	}
 
 	public int getCodigo() {

@@ -33,11 +33,13 @@ public class Carta {
 	}
 	
 	public void agregar(Plato plat) {
-		  if (!plat.getNombre().isEmpty())
-	        {
-	            if (!existePlatoByNombre(plat.getNombre()))
-	                getPlatos().add(plat);
-	        }
+		if(platos!=null) {
+			  if (!plat.getNombre().isEmpty())
+		        {
+		            if (!existePlatoByNombre(plat.getNombre()))
+		                getPlatos().add(plat);
+		        }
+		}
 	}
 	
 	private boolean existePlatoByNombre(String nombre){
@@ -53,11 +55,13 @@ public class Carta {
 
 	
 	public void agregar(Bebida beb) {
-		if (!beb.getNombre().isEmpty())
-        {
-            if (!existeBebidaByNombre(beb.getNombre()))
-                getBebidas().add(beb);
-        }
+		if(bebidas!=null) {
+			if (!beb.getNombre().isEmpty())
+	        {
+	            if (!existeBebidaByNombre(beb.getNombre()))
+	                getBebidas().add(beb);
+	        }
+		}
 	}
 	
 	private boolean existeBebidaByNombre(String nombre){
@@ -73,23 +77,20 @@ public class Carta {
 
 	
 	public void quitar(int codigo) {
-		boolean Esta = false;
         for (Bebida beb : getBebidas())
         {
             if (beb.getCodigo() == codigo)
             {
-                Esta = true;
+                bebidas.remove(beb);
             }
         }
         
         for(Plato plat : getPlatos()) {
         	if(plat.getCodigo() == codigo) 
         	{
-        		Esta=true;
+        		platos.remove(plat);
         	}
         }
-        
-        	;
 	}
 	
 	public void listarBebidas() {
@@ -100,7 +101,7 @@ public class Carta {
 	
 	public void listarPorCategoria(String categoria) {
 		for (Plato plat : platos) {
-		//	if(plat.getCategoria() == categoria)
+			if(plat.getCategoria().equals(categoria))
 				System.out.println(plat.toString());
 		}
 	}
