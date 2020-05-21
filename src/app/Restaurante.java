@@ -6,9 +6,9 @@ public class Restaurante {
 	private Carta carta;
 	
 	public Restaurante(String nombre, String direccion, Carta carta) {
-		this.nombre = nombre;
-		this.direccion = direccion;
-		this.carta = carta;
+		setNombre(nombre);
+		setDireccion(direccion);
+		setCarta(carta);
 	}
 
 	@Override

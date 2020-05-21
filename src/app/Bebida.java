@@ -6,9 +6,9 @@ public class Bebida {
 	private float precio;
 	
 	public Bebida(int codigo, String nombre, float precio) {
-		this.codigo = codigo;
-		this.nombre = nombre;
-		this.precio = precio;
+		setCodigo(codigo);
+		setNombre(nombre);
+		setPrecio(precio);
 	}
 
 	@Override

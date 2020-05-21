@@ -7,8 +7,8 @@ public class Carta {
 	private ArrayList<Bebida> bebidas;
 	
 	public Carta() {
-		this.platos = new ArrayList<>();
-		this.bebidas = new ArrayList<>();
+		setPlatos(platos);
+		setBebidas(bebidas);
 	}
 	
 	@Override
